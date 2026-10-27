@@ -1,0 +1,1 @@
+var e=``+new URL(`../figures/flood-resilience-codesign.webp`,import.meta.url).href;export{e as t};

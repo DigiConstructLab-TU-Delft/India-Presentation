@@ -1,0 +1,30 @@
+/* One type scale, one palette and one spacing rule for all content slides (the title and closing slides keep their own display sizes). */
+:root {
+  --fs-micro: 0.42em;   /* labels, captions, organisation lines */
+  --fs-small: 0.5em;    /* descriptions, bullets, secondary text */
+  --fs-body: 0.58em;    /* primary text */
+  --fs-lead: 0.7em;     /* lead statements, card titles */
+  --fs-head: 0.9em;     /* group and panel headings */
+  --c-ink: #1d2830;
+  --c-text: #40525a;
+  --c-muted: #64727a;
+  --c-accent: #007fa8;
+  --c-cyan: #00aeef;
+  --c-rule: #d9e2e6;
+  --c-soft: #f7fbfc;
+  --c-soft-blue: #eff9fc;
+  --radius: 6px;
+}
+/* the first block under every slide title starts at the same height */
+.slidev-layout h1 + * { margin-top: 12px !important; }
+
+/* Resilient Hydro Twin slides: shared building blocks. Sizes are in em so they scale with the slide. */
+.rcard { padding: 10px 14px; background: #f7fbfc; border-top: 4px solid #00aeef; border-radius: 6px; }
+.rcard.dark { border-top-color: #010101; background: #fff; border-left: 1px solid #d9e2e6; border-right: 1px solid #d9e2e6; border-bottom: 1px solid #d9e2e6; }
+.slidev-layout .rcard h3 { margin: 0; color: #007fa8; font-size: 0.6em; line-height: 1.25; letter-spacing: -0.01em; }
+.slidev-layout .rcard p, .slidev-layout .rcard li { margin: 3px 0 0; color: #40525a; font-size: 0.5em; line-height: 1.38; }
+.slidev-layout .rcard ul { margin: 3px 0 0; padding-left: 1.1em; }
+.rtag { display: inline-block; margin: 0 0 4px; color: #007fa8; font-size: 0.42em; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.rsub { margin: -0.2em 0 10px; color: #40525a; font-size: 0.6em !important; }
+.rmedia { display: block; width: 100%; border-radius: 6px; object-fit: cover; background: #f7fbfc; }
+.rgrid { display: grid; gap: 14px; }

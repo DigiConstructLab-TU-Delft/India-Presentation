@@ -1,0 +1,26 @@
+
+.fw[data-v-d86d7a7d] { display: block; width: 100%; height: auto; font-family: Arial, Helvetica, sans-serif;
+}
+.pill[data-v-d86d7a7d] { font-size: 19px; font-weight: 700; fill: #1d2830;
+}
+.h1[data-v-d86d7a7d] { font-size: 26px; font-weight: 700; fill: #1d2830;
+}
+.h2[data-v-d86d7a7d] { font-size: 17px; fill: #1d2830;
+}
+.bt[data-v-d86d7a7d] { font-size: 17px; font-weight: 700; fill: #1d2830;
+}
+.bs[data-v-d86d7a7d] { font-size: 14px; fill: #3b4a54;
+}
+.fb[data-v-d86d7a7d] { font-size: 18px; font-weight: 700; fill: #1565c0; text-anchor: middle;
+}
+
+.loop[data-v-acdfec8b] { display: grid; grid-template-columns: 1fr 2fr; gap: 20px; align-items: center;
+}
+.pic[data-v-acdfec8b] { margin: 0;
+}
+.pic img[data-v-acdfec8b] { display: block; width: 100%; height: auto; border-radius: 6px;
+}
+.pic figcaption[data-v-acdfec8b] { margin-top: 6px; color: #64727a; font-size: var(--fs-micro); line-height: 1.35;
+}
+.fig[data-v-acdfec8b] { display: block; width: 100%; max-height: 360px;
+}

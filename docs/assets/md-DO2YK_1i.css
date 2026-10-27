@@ -1,0 +1,19 @@
+
+.chips[data-v-24f93659] { display: flex; gap: 6px;
+}
+.chips span[data-v-24f93659] { padding: 3px 11px; border: 1px solid #d9e2e6; border-radius: 12px; color: #64727a; font-size: var(--fs-micro);
+}
+.chips span.done[data-v-24f93659] { color: #007fa8; border-color: #bfe6f3;
+}
+.chips span.on[data-v-24f93659] { border-color: #00aeef; background: #eff9fc; color: #007fa8; font-weight: 700;
+}
+.cap[data-v-24f93659] { margin: 6px 0 6px; color: #40525a; font-size: var(--fs-body) !important;
+}
+.screen[data-v-24f93659] { height: 265px; border-radius: 6px; background: #f7fbfc; overflow: hidden; display: flex; align-items: center; justify-content: center;
+}
+.screen video[data-v-24f93659] { width: 100%; height: 100%; object-fit: contain;
+}
+.pair[data-v-24f93659] { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; height: 100%;
+}
+.pair img[data-v-24f93659] { width: 100%; height: 100%; object-fit: contain;
+}

@@ -1,0 +1,78 @@
+
+.head[data-v-998e152d] { margin: 0 0 4px !important;
+}
+/* everything is positioned in a 1000 x 480 frame */
+.frame[data-v-998e152d] { position: relative; width: 100%; aspect-ratio: 1000 / 480;
+}
+.frame[data-v-998e152d] > * { position: absolute;
+}
+.legend[data-v-998e152d] { left: 2%; top: 0; display: flex; align-items: center; gap: 6px; color: #64727a; font-size: var(--fs-micro);
+}
+.legend i[data-v-998e152d] { width: 90px; height: 6px; border-radius: 3px; background: linear-gradient(90deg, #67e8f9, #38bdf8, #3b82f6, #6366f1);
+}
+.legend em[data-v-998e152d] { margin-left: 8px; font-style: normal; color: #40525a;
+}
+.map[data-v-998e152d] { left: 2%; top: 8.33%; width: 56%; height: auto; border-radius: 6px; box-shadow: 0 1px 6px rgba(1, 1, 1, 0.18);
+}
+.cap[data-v-998e152d] { left: 2%; top: 83.5%; width: 56%; margin: 0 !important; color: #40525a; font-size: var(--fs-small) !important; line-height: 1.4 !important;
+}
+.kg[data-v-998e152d] { left: 0; top: 0; width: 100%; height: 100%; pointer-events: none;
+}
+.conn[data-v-998e152d] { stroke-dashoffset: 400; opacity: 0; transition: stroke-dashoffset 0.8s ease, opacity 0.4s;
+}
+.kg.on .conn[data-v-998e152d] { stroke-dashoffset: 0; opacity: 1; transition-delay: 0.05s;
+}
+.edge[data-v-998e152d] { stroke-dashoffset: 400; transition: stroke-dashoffset 0.8s ease;
+}
+.kg.on .edge[data-v-998e152d] { stroke-dashoffset: 0; transition-delay: var(--d);
+}
+.el[data-v-998e152d] { fill: #64727a; font-size: 8.5px; text-anchor: middle; font-family: Menlo, Consolas, monospace; opacity: 0; transition: opacity 0.5s ease;
+}
+.kg.on .el[data-v-998e152d] { opacity: 1; transition-delay: var(--d);
+}
+.node[data-v-998e152d] { opacity: 0; transform: translate(var(--x), var(--y)) scale(0.6); transition: opacity 0.5s ease, transform 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.kg.on .node[data-v-998e152d] { opacity: 1; transform: translate(var(--x), var(--y)) scale(1); transition-delay: var(--d);
+}
+.nt[data-v-998e152d] { font-size: 10.5px; font-weight: 700; text-anchor: middle; font-family: Menlo, Consolas, monospace;
+}
+.ns[data-v-998e152d] { fill: #94a3b8; font-size: 8.4px; text-anchor: middle;
+}
+.code[data-v-998e152d] { left: 61%; top: 8.33%; width: 37.5%; margin: 0; padding: 11px 13px; border: 1px solid #1e293b; border-radius: 10px; background: rgba(2, 6, 14, 0.92); color: #cbd5e1; font: 0.34em/1.6 Menlo, Consolas, monospace; white-space: pre; opacity: 0; transition: opacity 0.5s; min-height: 48%;
+}
+.code.on[data-v-998e152d] { opacity: 1;
+}
+.code[data-v-998e152d] .k { color: #c084fc;
+}
+.code[data-v-998e152d] .p { color: #7dd3fc;
+}
+.code[data-v-998e152d] .v { color: #fde68a;
+}
+.code[data-v-998e152d] .cur { color: #22d3ee;
+}
+.answer[data-v-998e152d] { left: 61%; top: 68%; width: 37.5%; display: grid; grid-template-columns: 1fr 1fr; gap: 10px; opacity: 0; transition: opacity 0.5s;
+}
+.answer.on[data-v-998e152d] { opacity: 1;
+}
+.klayer[data-v-998e152d] { left: 61%; top: 8.33%; width: 37.5%; height: 82.4%; display: flex; flex-direction: column; justify-content: space-between; padding-left: 18px; border-left: 4px solid #00aeef; opacity: 0; transform: translateY(8px); transition: opacity 0.5s ease, transform 0.5s ease; pointer-events: none;
+}
+.klayer.on[data-v-998e152d] { opacity: 1; transform: none;
+}
+.klayer h3[data-v-998e152d] { margin: 0; color: #010101; font-size: 1.15em; line-height: 1.15;
+}
+.klayer p[data-v-998e152d] { margin: 0 !important; color: #40525a; font-size: var(--fs-lead) !important; line-height: 1.45 !important;
+}
+.klayer ul[data-v-998e152d] { margin: 0; padding-left: 1.2em; list-style: disc; display: flex; flex-direction: column; gap: 22px;
+}
+.klayer li[data-v-998e152d] { color: #1d2830; font-size: var(--fs-lead) !important; line-height: 1.4 !important;
+}
+.klayer li[data-v-998e152d]::marker { color: #00aeef;
+}
+.card[data-v-998e152d] { padding: 9px 12px; border: 1px solid #d9e2e6; border-radius: 10px; background: #fff;
+}
+.card .v[data-v-998e152d] { color: #007fa8; font-size: 1.15em; font-weight: 800; line-height: 1;
+}
+.card .v.rose[data-v-998e152d] { color: #d6345a;
+}
+.card .l[data-v-998e152d] { margin-top: 4px; color: #40525a; font-size: var(--fs-micro);
+}

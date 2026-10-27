@@ -1,0 +1,1 @@
+var e=e=>`./`+e.replace(/^\//,``);export{e as t};

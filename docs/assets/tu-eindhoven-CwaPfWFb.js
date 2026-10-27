@@ -1,0 +1,1 @@
+var e=``+new URL(`../figures/logos/tu-eindhoven.png`,import.meta.url).href;export{e as t};

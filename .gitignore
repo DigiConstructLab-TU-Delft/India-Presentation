@@ -1,0 +1,10 @@
+# Dependencies and local builds
+node_modules/
+dist/
+
+# Local system and editor files
+.DS_Store
+.claude/
+
+# PowerPoint exports are regenerated on demand (npx slidev export --format pptx)
+*.pptx

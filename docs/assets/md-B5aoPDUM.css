@@ -1,0 +1,15 @@
+
+.two[data-v-8e284f58] { grid-template-columns: 1fr 1fr;
+}
+.photo[data-v-8e284f58] { height: 125px; margin-bottom: 6px;
+}
+.goal[data-v-8e284f58] { margin: 10px 0 8px; font-size: var(--fs-body) !important; color: #1d2830;
+}
+.definition[data-v-8e284f58] { padding: 8px 14px; border-left: 4px solid #00aeef; border-radius: 4px; background: #eff9fc; text-align: center;
+}
+.definition p[data-v-8e284f58] { margin: 0 !important; color: #1d2830;
+}
+.definition .term[data-v-8e284f58] { font-size: var(--fs-body) !important; font-weight: 700;
+}
+.definition .text[data-v-8e284f58] { margin-top: 2px !important; font-size: var(--fs-body) !important; line-height: 1.35 !important;
+}
