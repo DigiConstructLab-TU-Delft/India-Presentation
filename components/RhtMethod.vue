@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { asset } from '../composables/asset'
 // Research method: engaged scholarship. Two cities, two workshops each, plus the stakeholder interviews.
 const cities = [
   {
@@ -39,7 +40,7 @@ const cities = [
       <div v-for="(w, i) in c.workshops" :key="w.when" class="ws">
         <p class="wt"><b class="wn">Workshop {{ i + 1 }}</b> {{ w.title }} <span class="when">[{{ w.when }}]</span></p>
         <div class="row">
-          <img :src="w.photo" :alt="`Workshop ${i + 1}, ${c.name}`" class="ph" />
+          <img :src="asset(w.photo)" :alt="`Workshop ${i + 1}, ${c.name}`" class="ph" />
           <ul><li v-for="p in w.points" :key="p">{{ p }}</li></ul>
         </div>
       </div>

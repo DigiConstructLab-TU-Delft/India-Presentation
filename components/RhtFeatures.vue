@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { asset } from '../composables/asset'
 import { computed, unref } from 'vue'
 import { useSlideContext } from '@slidev/client'
 
@@ -27,7 +28,7 @@ const layers = [
         <img src="/figures/rht/feat_base_chennai.jpg" alt="Base scenario, Chennai" />
       </div>
       <template v-for="(l, i) in layers" :key="l.chip">
-        <video v-if="l.video && step === i" :src="l.video" autoplay muted loop playsinline></video>
+        <video v-if="l.video && step === i" :src="asset(l.video)" autoplay muted loop playsinline></video>
       </template>
     </div>
   </div>

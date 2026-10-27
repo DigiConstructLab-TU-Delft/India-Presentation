@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { asset } from '../composables/asset'
 import { computed } from 'vue'
 
 // Ongoing collaborations with Indian universities: one card per partner, with its logo and projects.
@@ -45,10 +46,10 @@ const partners = computed(() => allPartners.filter(p => props.names.includes(p.n
 
 <template>
   <div class="partner-grid" :class="{ single: partners.length === 1 }">
-    <img v-if="partners.length === 1" :src="partners[0].logo" :alt="`${partners[0].name} logo`" class="single-logo" />
+    <img v-if="partners.length === 1" :src="asset(partners[0].logo)" :alt="`${partners[0].name} logo`" class="single-logo" />
     <article v-for="p in partners" :key="p.name" class="partner-card">
       <header v-if="partners.length > 1" class="partner-head">
-        <img :src="p.logo" :alt="`${p.name} logo`" class="partner-logo" />
+        <img :src="asset(p.logo)" :alt="`${p.name} logo`" class="partner-logo" />
         <h2>{{ p.name }}</h2>
       </header>
       <div v-for="proj in p.projects" :key="proj.title" class="partner-project">
@@ -59,8 +60,8 @@ const partners = computed(() => allPartners.filter(p => props.names.includes(p.n
           </div>
           <div v-if="proj.media" class="project-media">
             <div v-for="m in proj.media" :key="m.src" class="media-tile">
-              <video v-if="m.type === 'video'" :src="m.src" autoplay muted playsinline class="project-video" @timeupdate="stopBeforeEnd"></video>
-              <img v-else :src="m.src" :alt="m.alt" class="project-photo" />
+              <video v-if="m.type === 'video'" :src="asset(m.src)" autoplay muted playsinline class="project-video" @timeupdate="stopBeforeEnd"></video>
+              <img v-else :src="asset(m.src)" :alt="m.alt" class="project-photo" />
             </div>
           </div>
         </div>
